@@ -52,7 +52,7 @@ func main() {
 
 	http.HandleFunc("/", echo)
 	http.HandleFunc("/hostname", getHostname)
-  http.HandleFunc("/ip", getIP)
+	http.HandleFunc("/ip", getIP)
 	http.HandleFunc("/request", getRequest)
 
 	err := http.ListenAndServe(":"+port, nil)
